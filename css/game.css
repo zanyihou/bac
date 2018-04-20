@@ -478,8 +478,8 @@ a.zIcon.mp {
 img.back {
 	transform-origin: center center;
 	-webkit-transform-origin: center center;
-	transform: translateZ(0px) rotateY(180deg);
-	-webkit-transform: translateZ(0px) rotateY(180deg);
+	transform: translateZ(-1px) rotateY(180deg);
+	-webkit-transform: translateZ(-1px) rotateY(180deg);
 }
 
 a.xIcon.Win,a.zIcon.Win {
