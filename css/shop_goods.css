@@ -1,0 +1,539 @@
+/* 
+* @function: 充值蒙版、商城弹窗
+* @Author: Administrator
+* @Date:   2017-04-08 11:05:02
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-08 11:05:02
+*/  
+ /* 充值蒙版 */
+.charge_wrap{
+  color:#fff;
+}
+.charge_wrap .f-l{
+  float: left;
+}
+.charge_wrap .f-r{
+  float: right;
+}
+.charge_wrap .page{
+   display:none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+  width: 100%;
+  max-width:640px;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  padding-top: 14%;
+}
+.charge_wrap .page-content{
+  width: 86%;
+  height: 100%;
+  position: relative;
+  margin:0 auto;
+}
+.charge_wrap .con-title{
+  width: 100%;
+  position: absolute;
+  /*text-align: center;*/
+}
+.charge_wrap .con-title p{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 5%;
+}
+.charge_wrap .con-title b{
+  font-weight:bold;
+}
+.charge_wrap .con-title b:nth-child(2){
+  padding: 0 7%;
+}
+.charge_wrap .title-img{
+  width: 100%;
+  position: absolute;
+}
+.charge_wrap .recharge-content-out{
+  padding:12% 3% 2% 2%;
+  height: 100%;
+}
+.charge_wrap .recharge-content{
+  width: 100%;
+  /*谁改的导致页面问题*/
+  height: 65%;  
+  background: #262932;
+  border: 0.2rem solid #4B74CC;
+  border-radius: 0.5rem;
+}
+
+.lucky_wrap .recharge-content{
+  width: 100%;
+  /*谁改的导致页面问题*/
+  height: auto;  
+  background: #262932;
+  border: 0.2rem solid #4B74CC;
+  border-radius: 0.5rem;
+}
+
+.charge_wrap .con-first{
+  text-align: center;
+  color: #fff;
+  padding: 10% 0% 0% 0%;
+  font-size: 0.9rem;
+
+}
+/*.charge_wrap .con-first p:nth-child(2){
+  color:#ffffff;
+}*/
+.charge_wrap i{
+  display: inline-block;
+}
+.charge_wrap .lb{
+  width: 100%;
+  height:2rem;
+  background: #1e2026;
+  position: relative;
+
+}
+.charge_wrap .lb-logo{
+  width: 1.5rem;
+  height: 1rem;
+  display: inline-block;
+  background-image: url("../img/image/sprite-icon.png");
+  background-size: 300%;
+  background-position:  0 -22px;
+  margin-left: 5%;
+  margin-top:0.5rem;
+}
+.charge_wrap .lb-text-out{
+  display: inline-block;
+  width: 80%;
+  height:2rem;
+  line-height: 2rem;
+  position: absolute;
+  margin-left: 0.5rem;
+  overflow: hidden;
+}
+.charge_wrap #lb-text{
+  position: absolute;
+  display: inline-block;
+  left: 30px;
+  font-size: 0.9rem;
+  color: #6e80ab;
+}
+.charge_wrap .con-ul{ 
+  margin-top: 4%;
+  padding: 0 2.5%;
+  /*height: 22rem;*/
+  height: 80%;
+  overflow:auto;
+  overflow-y:auto;
+  overflow-x:hidden; 
+}
+.charge_wrap .con-ul li{
+  padding: 6% 0;
+  overflow: hidden;
+  border-bottom:0.1rem solid #333D5D;
+}
+.charge_wrap .con-ul li:last-child{
+  border:none;
+}
+.charge_wrap .con-ul span{
+  line-height: 2.5rem;
+  padding-left:3%;
+  font-size: 0.9rem;
+}
+.charge_wrap .con-ul-logo{
+  width: 3.5rem;
+  margin: -3%;
+  margin-left: 0;
+}
+.charge_wrap .con-ul-tips{
+  background:#4B74CC;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding:0 0.3rem;
+  margin-top: 0.2rem;
+}
+.charge_wrap .con-ul-mid{
+  margin-left: 2%;
+}
+.charge_wrap .con-ul-btn{
+  text-align: center;
+  color: #FFFFFF;
+  border: 0;
+  outline: 0;
+  background: #D91D36;
+  border-radius:0.3rem;
+  padding: 3% 7%;
+}
+.charge_wrap .con-ul-p{
+  margin:0;
+}
+.charge_wrap .con-ul-p2{
+   margin:0;
+  font-size: 0.3rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 5px;
+  background:#4B74CC;
+}
+.charge_wrap .page_in{
+  position:absolute; top:-1rem; 
+  width:100%; 
+  height:100%; 
+  background:rgba(0,0,0,0);
+}
+.charge_wrap .charge_wrap_close{
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  color: #C84335;
+  text-align: center;
+  border: 0.2rem solid #A33226;
+  outline: 0;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background: #6E191E;
+  right: 3%;
+  top: 1.4rem;
+}
+.charge_wrap .charge_wrap_close p{
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("../img/image/sprite-icon.png");
+  background-size: 300%;
+  background-position:  -1.65rem -0.3rem;
+  position: absolute;
+  top: 0;
+}
+/* 跳转商城 */
+.shop_wrap{
+  color:#fff;
+}
+.shop_wrap .f-l{
+  float: left;
+}
+.shop_wrap .f-r{
+  float: right;
+}
+.shop_wrap .page{
+  display:none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  max-width:640px;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  padding-top: 18%;
+}
+.shop_wrap .page-content{
+  width: 85%;
+  position: relative;
+  margin:0 auto;
+}
+.shop_wrap .con-title{
+  width: 100%;
+  position: absolute;
+  /*text-align: center;*/
+}
+.shop_wrap .con-title p{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 5%;
+}
+.shop_wrap .con-title b{
+  font-weight:bold;
+}
+.shop_wrap .con-title b:nth-child(2){
+  padding: 0 5%;
+}
+.shop_wrap .title-img{
+  width: 100%;
+  position: absolute;
+}
+.shop_wrap .shop_close{
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  color: #C84335;
+  border: 0.2rem solid #A33226;
+  outline: 0;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background: #6E191E;
+  right: 3%;
+  top: 1.4rem;
+}
+.shop_wrap .shop_close p{
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("../img/image/sprite-icon.png");
+  background-size: 300%;
+  background-position: -1.65rem -0.3rem;
+  position: absolute;
+  top: 0;
+}
+.shop_wrap .shop-content-out{
+  padding:13% 3% 2% 2%;
+}
+.shop_wrap .shop-content{
+  width: 100%;
+  background: #262932;
+  border: 0.2rem solid #333D5D;
+  border-radius: 0.5rem;
+}
+.shop_wrap .con-ul{
+  margin-top: 8%;
+  padding: 0 2.5%;
+  height: 22rem;
+  overflow:auto;
+  overflow-y:auto;
+   overflow-x:hidden;
+  font-size:0;
+}
+.con-ul::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 1px solid rgba(0, 0, 0, 0);
+}
+.con-ul::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 3rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.con-ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  min-height: 28px;
+}
+.con-ul::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius:0.5rem;
+}
+
+.shop_wrap .con-ul li{
+  display: inline-block;
+  padding: 6% 0 4% 0;
+  overflow: hidden;
+  background: #292D36;
+  border-radius: 0.3rem;
+  width: 45%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin:2.5%;
+  box-sizing:border-box;
+}
+/* .shop_wrap .con-ul li:nth-child(even){
+  margin:3% 0 0 3%;
+} */
+.shop_wrap .con-ul .shop-name{
+  width:100%;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.shop_wrap .con-ul-img{
+  display: block;
+  width:75%;
+  margin:5% auto 8%;
+}
+.shop_wrap .con-ul-btn{
+  width:90%;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0;
+  outline: 0;
+  background: #E24239;
+  border-radius:0.3rem;
+  padding: 5% 0;
+  vertical-align:middle;
+  margin:0 auto;
+}
+.shop_wrap .con-ul-logo{
+  width: 1.2rem;
+  display:inline-block;
+  vertical-align:bottom;
+  /* margin: 3% -3% -3% -3%; */
+}
+
+.shop_wrap .con-ul-btn span{
+  display: inline-block;
+  padding-left:2%;
+  font-size: 1rem;
+}
+.shop_wrap .shop_more{
+  width: 100%;
+  padding: 4% 0;
+  background: #292D36;
+  text-align: center;
+  color: #545A6F;
+  border-top: 0.1rem solid #262932;
+}
+.shop_wrap .shop_more span{
+  display:inline-block;
+  vertical-align:middle
+}
+.shop_wrap .shop_more img{
+  width: 0.85rem;
+  vertical-align:middle;
+}
+
+
+.charge_wrap_close_btn{
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+    width: 0.5rem;
+}
+/*牛人幸运榜*/
+.lucky_wrap .recharge-content{
+  background:#223158;
+}
+.lucky_wrap .con-first{
+  width: 96%;
+}
+.lucky-sel-con{
+  border-radius:50px 0 0 50px;
+  width: 47%;
+  border:1px solid #fff;
+  text-align: center;
+  background:#313E5E;
+  display: inline-block;
+  float: left;
+}
+
+.lucky-sel-con:nth-child(2){
+  border-radius:0 50px 50px 0;
+  border-left: none;
+}
+.lucky-sel h4{
+  margin:0;
+  font-size: 0.9rem; 
+  color: #809DE9;
+}
+.lucky-sel p{
+  margin:0;
+  font-size: 0.7rem;
+  color: #809DE9;
+}
+.sel1-con{
+   background: #fff;
+}
+.sel1-con h4, .sel1-con p{
+
+  color: #1C3151;
+}
+.lucky_wrap .page{
+  display: none;
+}
+.lucky_wrap .con-first {
+    padding: 9% 0% 16% 4%;
+    font-size: 0.7rem;
+        margin: 0;
+    color: #656b81;
+}
+.lucky-title{
+  display: flex;
+  display:-webkit-box;
+  display: -webkit-flex; 
+    width: 92%;
+    clear: both;
+    background: #223158;
+    border-top: 1px solid #38497B;
+    padding: 2% 4%;
+}
+.lucky-title span{
+  color: #4C5E90; 
+   -webkit-box-flex:1;
+  flex: 1;
+   -webkit-flex: 1;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: -0.05rem;
+}
+.lucky-title span:nth-child(1){
+    -webkit-box-flex:0.5;
+  flex: 0.5;
+   -webkit-flex: 0.5;
+    text-align: left;
+}
+.lucky-title span:nth-child(2){
+    -webkit-box-flex:1.3;
+  flex: 1.3;
+   -webkit-flex: 1.3;
+}
+.lucky-title span:nth-child(3){
+   -webkit-box-flex:1;
+  flex: 1;
+   -webkit-flex: 1;
+}
+.lucky_wrap .con-ul{
+  background: #313E5E;
+  margin:0;
+  height: 19.5rem;
+  border-radius: 0 0 6px 6px;
+}
+.lucky_wrap .con-ul .lucky-li{
+  display: flex;
+  display:-webkit-box;
+  display: -webkit-flex; 
+  border-bottom: 0.1rem solid #4866AC;
+  padding-top:3%;
+  padding-bottom: 1%;
+}
+.lucky-li-img{
+  -webkit-box-flex:1;
+  flex: 1;
+  -webkit-flex: 1;
+  padding-top: 0.2rem;
+  font-size: 1.3rem;
+  color: #8AAAF1;
+  text-indent: 0.4rem;
+}
+.lucky-li-img img{
+  width: 1.6rem;
+}
+.lucky-li-mid,.lucky-money{
+  -webkit-box-flex:2;
+  flex: 2;
+  -webkit-flex: 2;
+}
+.lucky-li-mid{
+    -webkit-box-flex:2.5;
+  flex: 2.5;
+  -webkit-flex: 2.5;
+}
+.lucky-li-head{
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  vertical-align: top;
+  margin-top:0.2rem;
+}
+.lucky-money{
+  text-align: center;
+  color: #FAE75A;
+  line-height: 2.5rem;
+}
+.lucky-user{
+margin-left:0.3rem;
+width:4.5rem;
+display:inline-block;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+
+

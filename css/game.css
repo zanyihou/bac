@@ -1,0 +1,872 @@
+.content {
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 5px;
+}
+
+.chipTable {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.chipTable div p {
+	display: none;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 20%;
+	width: 100%;
+}
+
+.chipTable div p span.chipNum {
+	border-radius: 7px;
+	z-index: 99;
+	position: relative;
+	padding: 0 5px;
+	background: #000;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	color: deepskyblue;
+}
+
+.chipTable div span i.tChip {
+	color: #f90;
+}
+
+.history {
+	text-align: center;
+	margin-top: 2.5rem;
+	height: 200px;
+}
+
+.hisCnt {
+	width: 320px;
+	position: relative;
+	margin: 0 auto;
+	height: 200px;
+}
+
+.hisBg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 200px;
+}
+
+.hisCnt a {
+	position: absolute;
+	color: yellow;
+	font-size: 12px;
+}
+
+.hisCnt a span {
+	margin-left: 10px;
+	color: #ca59ab;
+}
+
+.tot1 {
+	left: 30px;
+	top: 7px;
+}
+
+.tot2 {
+	left: 132px;
+	top: 7px;
+}
+
+.tot3 {
+	left: 233px;
+	top: 7px;
+}
+
+.tot4 {
+	left: 45px;
+	top: 21px;
+}
+
+.tot5 {
+	left: 110px;
+	top: 21px;
+}
+
+.tot6 {
+	left: 180px;
+	top: 21px;
+}
+
+.tot7 {
+	left: 250px;
+	top: 21px;
+}
+
+.hisWay {
+	position: absolute;
+	width: 308px;
+	left: 6px;
+	top: 41px;
+	height: 128px;
+}
+
+.hisWay li {
+	width: 21px;
+	float: left;
+	margin-right: 1px;
+	height: 129px;
+}
+
+.hisWay li span {
+	display: block;
+	height: 21px;
+	line-height: 22px;
+}
+
+.hisWay li span i {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+
+i.dotX {
+	background: url(../img/dotX.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+i.dotZ {
+	background: url(../img/dotZ.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+i.dotP {
+	background: url(../img/dotP.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.hisIntro {
+	position: absolute;
+	left: 10px;
+	bottom: 8px;
+	color: yellow;
+	font-size: 12px;
+}
+
+.hisIntro span {
+	margin-right: 13px;
+}
+
+.hisIntro i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.chipTable div.cho {
+	animation: flicker .4s linear infinite;
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 0;
+	}
+
+	49.9% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.tn1 {
+	position: absolute;
+	top: 30%;
+	height: 16.6%;
+	left: 9.8%;
+	width: 29.7%;
+}
+
+.tn1.cli {
+	background: url(../img/t1_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn1.cho {
+	background: url(../img/t1_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn2 {
+	position: absolute;
+	top: 30%;
+	height: 16.6%;
+	left: 60.8%;
+	width: 29%;
+}
+
+.tn2.cli {
+	background: url(../img/t2_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn2.cho {
+	background: url(../img/t2_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn3 {
+	position: absolute;
+	top: 47.5%;
+	height: 23%;
+	left: 7.8%;
+	width: 31%;
+}
+
+.tn3.cli {
+	background: url(../img/t3_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn3.cho {
+	background: url(../img/t3_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn4 {
+	position: absolute;
+	top: 47.5%;
+	height: 23%;
+	left: 39%;
+	width: 22.5%;
+}
+
+.tn4.cli {
+	background: url(../img/t4_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn4.cho {
+	background: url(../img/t4_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn5 {
+	position: absolute;
+	top: 47.5%;
+	height: 23%;
+	left: 61.7%;
+	width: 30.8%;
+}
+
+.tn5.cli {
+	background: url(../img/t5_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn5.cho {
+	background: url(../img/t5_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn6 {
+	position: absolute;
+	top: 71.5%;
+	height: 16%;
+	left: 8.6%;
+	width: 29.5%;
+}
+
+.tn6.cli {
+	background: url(../img/t6_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn6.cho {
+	background: url(../img/t6_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn7 {
+	position: absolute;
+	top: 71.5%;
+	height: 16%;
+	left: 38.5%;
+	width: 23%;
+}
+
+.tn7.cli {
+	background: url(../img/t7_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn7.cho {
+	background: url(../img/t7_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn8 {
+	position: absolute;
+	top: 71.5%;
+	height: 16%;
+	left: 62%;
+	width: 29.6%;
+}
+
+.tn8.cli {
+	background: url(../img/t8_click.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.tn8.cho {
+	background: url(../img/t8_active.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.chipTs {
+	width: 80px;
+	height: 30px;
+	background: url(../img/tsBg.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 32%;
+	left: 50%;
+	margin-left: -40px;
+}
+
+.chipTs p {
+	line-height: 30px;
+}
+
+.chipTs p span {
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 13px;
+	width: 28px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+
+.chipTs p a.tsType {
+	display: inline-block;
+	line-height: 0;
+	width: 50px;
+	height: 15px;
+	perspective: 100px;
+	-webkit-perspective: 100px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.chipTs p a.tsType img {
+	display: none;
+	width: 50px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.t1 .st1 {
+	display: block !important;
+}
+
+.t2 .st2 {
+	display: block !important;
+}
+
+.t3 .st3 {
+	display: block !important;
+}
+
+.dealBg {
+	position: absolute;
+	top: 36%;
+	left: 0%;
+	width: 100%;
+	height: 36%;
+}
+
+.dBg1 {
+	z-index: 101;
+	position: relative;
+}
+
+.dBg2 {
+	z-index: 111;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+a.xIcon {
+	position: absolute;
+	left: 18%;
+	margin-left: -22px;
+}
+
+a.zIcon {
+	position: absolute;
+	right: 18%;
+	margin-right: -22px;
+}
+
+a.pIcon {
+	display: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -22px;
+}
+
+a.xIcon.mv {
+	position: absolute;
+	left: 28%;
+	transition: left .5s linear;
+}
+
+a.zIcon.mv {
+	position: absolute;
+	right: 28%;
+	transition: right .5s linear;
+}
+
+a.xIcon.mp {
+	position: absolute;
+	left: 50%;
+	transition: left .5s linear;
+}
+
+a.zIcon.mp {
+	position: absolute;
+	right: 50%;
+	transition: right .5s linear;
+}
+
+.dBg2 a {
+	width: 44px;
+	height: 22px;
+	top: -23px;
+	perspective: 100px;
+	-webkit-perspective: 100px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.dBg2 a img {
+	display: inline-block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+img.back {
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	transform: translateZ(0px) rotateY(180deg);
+	-webkit-transform: translateZ(0px) rotateY(180deg);
+}
+
+a.xIcon.Win,a.zIcon.Win {
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	animation: scrollMove 1s linear forwards;
+	-webkit-animation: scrollMove 1s linear forwards;
+}
+
+@keyframes scrollMove {
+	from {
+		transform: rotateY(0);
+	}
+
+	to {
+		transform: rotateY(-180deg);
+	}
+}
+@-webkit-keyframes scrollMove{
+	from {
+		-webkit-transform: rotateY(0);
+	}
+
+	to {
+		-webkit-transform: rotateY(-180deg);
+	}
+}
+
+.dBg3 {
+	z-index: 122;
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: 54%;
+}
+		/*.dBg3.sc { transform: scale(0.9); transition: all 1s linear;}*/
+.dBg3.sc {
+	left: 15%;
+	right: 15%;
+	width: 70%;
+	height: 47.2%;
+	transition: all .2s linear;
+}
+
+.dBg3 div {
+	display: inline-block;
+}
+
+.xCard {
+	width: 30%;
+	height: 100%;
+}
+
+.zCard {
+	width: 30%;
+	height: 100%;
+}
+
+.dBg3 a {
+	display: none;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+}
+
+.card {
+	background: url(../img/card.png) no-repeat;
+	background-size: 1300% 500%;
+}
+
+.card1 {
+	left: 3%;
+}
+
+.card2 {
+	left: 87%
+}
+
+.card3 {
+	left: 14%
+}
+
+.card4 {
+	left: 76%
+}
+
+.card5 {
+	left: 25%
+}
+
+.card6 {
+	left: 65%
+}
+		/*方片*/
+.card1_1 {
+	background-position: 0 0;
+}
+
+.card1_2 {
+	background-position: 8.33% 0;
+}
+
+.card1_3 {
+	background-position: 16.66% 0;
+}
+
+.card1_4 {
+	background-position: 24.99% 0;
+}
+
+.card1_5 {
+	background-position: 33.32% 0;
+}
+
+.card1_6 {
+	background-position: 41.65% 0;
+}
+
+.card1_7 {
+	background-position: 49.98% 0;
+}
+
+.card1_8 {
+	background-position: 58.31% 0;
+}
+
+.card1_9 {
+	background-position: 66.64% 0;
+}
+
+.card1_10 {
+	background-position: 74.97% 0;
+}
+
+.card1_11 {
+	background-position: 83.33% 0;
+}
+
+.card1_12 {
+	background-position: 91.63% 0;
+}
+
+.card1_13 {
+	background-position: 99.96% 0;
+}
+		/*梅花*/
+.card2_1 {
+	background-position: 0 25%;
+}
+
+.card2_2 {
+	background-position: 8.33% 25%;
+}
+
+.card2_3 {
+	background-position: 16.66% 25%;
+}
+
+.card2_4 {
+	background-position: 24.99% 25%;
+}
+
+.card2_5 {
+	background-position: 33.32% 25%;
+}
+
+.card2_6 {
+	background-position: 41.65% 25%;
+}
+
+.card2_7 {
+	background-position: 49.98% 25%;
+}
+
+.card2_8 {
+	background-position: 58.31% 25%;
+}
+
+.card2_9 {
+	background-position: 66.64% 25%
+}
+
+.card2_10 {
+	background-position: 74.97% 25%;
+}
+
+.card2_11 {
+	background-position: 83.33% 25%;
+}
+
+.card2_12 {
+	background-position: 91.63% 25%;
+}
+
+.card2_13 {
+	background-position: 99.96% 25%;
+}
+		/*红桃*/
+.card3_1 {
+	background-position: 0 50%;
+}
+
+.card3_2 {
+	background-position: 8.33% 50%;
+}
+
+.card3_3 {
+	background-position: 16.66% 50%;
+}
+
+.card3_4 {
+	background-position: 24.99% 50%;
+}
+
+.card3_5 {
+	background-position: 33.32% 50%;
+}
+
+.card3_6 {
+	background-position: 41.65% 50%;
+}
+
+.card3_7 {
+	background-position: 49.98% 50%;
+}
+
+.card3_8 {
+	background-position: 58.31% 50%;
+}
+
+.card3_9 {
+	background-position: 66.64% 50%
+}
+
+.card3_10 {
+	background-position: 74.97% 50%;
+}
+
+.card3_11 {
+	background-position: 83.33% 50%;
+}
+
+.card3_12 {
+	background-position: 91.63% 50%;
+}
+
+.card3_13 {
+	background-position: 99.96% 50%;
+}
+		/*黑桃*/
+.card4_1 {
+	background-position: 0 75%;
+}
+
+.card4_2 {
+	background-position: 8.33% 75%;
+}
+
+.card4_3 {
+	background-position: 16.66% 75%;
+}
+
+.card4_4 {
+	background-position: 24.99% 75%;
+}
+
+.card4_5 {
+	background-position: 33.32% 75%;
+}
+
+.card4_6 {
+	background-position: 41.65% 75%;
+}
+
+.card4_7 {
+	background-position: 49.98% 75%;
+}
+
+.card4_8 {
+	background-position: 58.31% 75%;
+}
+
+.card4_9 {
+	background-position: 66.64% 75%
+}
+
+.card4_10 {
+	background-position: 74.97% 75%;
+}
+
+.card4_11 {
+	background-position: 83.33% 75%;
+}
+
+.card4_12 {
+	background-position: 91.63% 75%;
+}
+
+.card4_13 {
+	background-position: 99.96% 75%;
+}
+		/*背面*/
+.cardBack {
+	background-position: 16.66% 100%;
+	top: -300%;
+	left: 45%;
+}
+
+.dBg4 {
+	z-index: 133;
+	display: none;
+	background: #ca59ab;
+	font-size: 12px;
+	color: yellow;
+	height: 18px;
+	line-height: 18px;
+	position: absolute;
+	left: 10%;
+	top: 35%;
+	width: 80%;
+	text-align: center;
+}
+
+.Totaldot {
+	position: absolute;
+	z-index: 1;
+	bottom: -16px;
+	left: 15%;
+	right: 15%;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.xDot {
+	float: left;
+	display: none;
+	width: 24px;
+	height: 16px;
+	background: url(../img/dot.png) no-repeat;
+	background-size: 1000% 100%;
+}
+
+.zDot {
+	float: right;
+	display: none;
+	width: 24px;
+	height: 16px;
+	background: url(../img/dot.png) no-repeat;
+	background-size: 1000% 100%;
+}
+
+.dot0 {
+	background-position: 0 0;
+}
+
+.dot1 {
+	background-position: 11.11% 0;
+}
+
+.dot2 {
+	background-position: 22.22% 0;
+}
+
+.dot3 {
+	background-position: 33.33% 0;
+}
+
+.dot4 {
+	background-position: 44.44% 0;
+}
+
+.dot5 {
+	background-position: 55.55% 0;
+}
+
+.dot6 {
+	background-position: 66.66% 0;
+}
+
+.dot7 {
+	background-position: 77.77% 0;
+}
+
+.dot8 {
+	background-position: 88.88% 0;
+}
+
+.dot9 {
+	background-position: 99.99% 0;
+}
